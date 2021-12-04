@@ -1,0 +1,94 @@
+/***************************/
+
+
+@media(max-width:1200px) {
+    .details-content {
+        margin-top: -142px;
+    }
+
+    .details-content .content {
+        padding: 20px;
+    }
+}
+
+@media(max-width:992px) {
+
+    .home-slider .item .home-content h1 {
+        font-size: 30px;
+    }
+
+    .details-content {
+        margin-top: 0;
+    }
+    .footer-section .col-md-6:nth-child(3),
+    .footer-section .col-md-6:last-child{
+        margin-top:30px;
+    }
+
+}
+
+@media(max-width:768px) {
+    .home-slider .owl-dots {
+        position: relative;
+        margin-top: -60px !important;
+        top: 0;
+        left: 0;
+    }
+
+    .home-slider .owl-dots button {
+        display: inline-block !important;
+        margin-right: 7px;
+    }
+
+    .program-section .heading-program-section {
+        text-align: left;
+    }
+
+    .contact-section .contact-content {
+        padding: 7% 5%;
+    }
+
+    .header {
+        background: #000 !important;
+    }
+
+    .preloader .content {
+        left: 39%;
+    }
+
+    .preloader .rotate {
+        left: 39%;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .footer-bottom ul {
+        text-align: center;
+    }
+    .footer-section .col-md-6 {
+        margin-top:30px;
+    }
+    .footer-section .col-md-6:first-child{
+        margin-top: 0   ;
+    }
+}
+
+@media(max-width:576px) {
+
+    .about-section .about-info h2 {
+        font-size: 30px;
+    }
+
+    .about-section .about-info p {
+        padding: 10px 0;
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+    .timetable_filtering ul li:not(:last-of-type) {
+        margin-right: 29px;
+    }
+}

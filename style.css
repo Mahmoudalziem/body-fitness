@@ -1,0 +1,326 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background: url('Assets/img/background/bg_4.jpg') fixed center;
+}
+
+.demo-header {
+    text-align: center;
+    height: 650px;
+    background: url('Assets/img/index/index.jpeg')center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    position: relative;
+
+}
+
+.demo-header .particles-js {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 650px;
+    z-index: 123;
+}
+
+.demo-header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.demo-content {
+    position: relative;
+    z-index: 1234;
+    margin: 180px 0 0 0;
+}
+
+.demo-content h3 {
+    display: block;
+    margin: 0 0 1em 0;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.demo-content p {
+    font-size: 1.25em;
+    letter-spacing: -.0225em;
+    line-height: 1.65em;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.demo-content .demo-links {
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.demo-content a {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    width: 160px;
+    height: 40px;
+    background-color: #e5ce48;
+    color: #000;
+    margin-right: 20px;
+    position: relative;
+    transition: all .3s ease-in-out;
+    margin-top: 20px;
+}
+
+.demo-content a:hover {
+    border: 0;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: #e5ce48;
+    background-color: transparent;
+    color: #e5ce48;
+    border-radius: 100px;
+}
+
+.demo-content a:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 100px;
+    display: none;
+}
+
+.demo-content a:hover:after {
+    display: block;
+}
+
+.demo-view {
+    padding: 100px 0 50px;
+}
+
+.demo-view .view-content {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    box-shadow: 0 0 10px 1px #fff;
+}
+
+.demo-view .view-content .view-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.demo-view .view-content .view-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in-out;
+    background-size: cover;
+    background-position: center;
+}
+
+.demo-view .view-content .view-image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 12;
+    transform: scale(.7);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.demo-view .view-content:hover img {
+    transform: scale(1.4) rotate(20deg);
+}
+
+.demo-view .view-content:hover .view-image:after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.demo-view .view-content a {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 123;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #e5ce48;
+    color: #000;
+    margin-right: 20px;
+    transition: all .3s ease-in-out;
+    transform: scale(0);
+}
+
+.demo-view .view-content a:hover {
+    border-radius: 100px;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid #e5ce48;
+    color: #e5ce48;
+}
+
+.demo-view .view-content:hover a {
+    transform: scale(1);
+}
+
+.demo-view .view-content .view-desc {
+    width: 100%;
+    height: 50px;
+    font-weight: 600;
+    color: #000;
+    line-height: 50px;
+    background-color: #e5ce48;
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, .4);
+    padding: 5px;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.footer-bottom p.copyright {
+    font-weight: 600;
+    color: rgba(255, 255, 255, .7);
+    margin-top: 30px;
+}
+
+.footer-bottom p.copyright a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #e5ce48;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.footer-bottom li {
+    display: inline-block;
+}
+
+.footer-bottom li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: gray;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 40px;
+    transition: all .3s ease-in-out;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.footer-bottom li a:hover {
+    color: black;
+    background: #e5ce48;
+}
+
+
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 123456;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    margin: auto;
+}
+
+.preloader .content {
+    position: relative;
+    left: 46%;
+    top: calc(50% - 24px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid gray;
+}
+
+.preloader .rotate {
+    position: absolute;
+    left: 46%;
+    top: calc(50% - 24px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e5ce48;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-animation: loader-rotate .5s linear infinite;
+    animation: loader-rotate .5s linear infinite;
+}
+
+@keyframes loader-rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+@media(max-width:768px) {
+    .footer-bottom {
+        text-align: center;
+    }
+
+    .footer-bottom ul {
+        text-align: center;
+    }
+
+    .footer-section .col-md-6 {
+        margin-top: 30px;
+    }
+
+    .footer-section .col-md-6:first-child {
+        margin-top: 0;
+    }
+
+    .preloader .content {
+        left: 39%;
+    }
+
+    .preloader .rotate {
+        left: 39%;
+    }
+}
+
+@media(max-width:567px) {
+    .demo-content p {
+        font-size: 17px;
+    }
+
+}
